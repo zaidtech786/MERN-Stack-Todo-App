@@ -5,15 +5,15 @@ app.use(cors())
 app.use(express.json());
 const dotenv = require("dotenv")
 dotenv.config();
-const path = require("path")
+// const path = require("path")
 
 
 // Static Files
-app.use(express.static(path.join(__dirname,"../Frontend/todo_app/dist")))
+// app.use(express.static(path.join(__dirname,"../Frontend/todo_app/dist")))
 
-app.get("*",function(req,res) {
-res.sendFile(path.join(__dirname,"../Frontend/todo_app/dist/index.html"))
-})
+// app.get("*",function(req,res) {
+// res.sendFile(path.join(__dirname,"../Frontend/todo_app/dist/index.html"))
+// })
 
 let port = process.env.PORT 
 

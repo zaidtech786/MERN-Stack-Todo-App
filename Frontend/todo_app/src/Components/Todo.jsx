@@ -177,9 +177,9 @@ const Todo = () => {
         </div>
 
         <div className="btnContainer">
-          <span className="all active" style={{color:active==="All" ? "#2a72c5" : "" }} onClick={() => getTodos()}>All</span>
+          <span className="all active" style={{color:active==="All" ? "#2a72c5" : "" }} onClick={() => {getTodos(),showData("All")}}>All</span>
           {/* <span className="pending" style={{color:active==="Pending" ? "#2a72c5" : "" }} onClick={()=>showData("pending")}>Pending</span> */}
-          <span className="completed" style={{color:active==="Completed" ? "#2a72c5" : "" }} onClick={()=>showData("completed")}>Completed</span>
+          <span className="completed" style={{color:active==="completed" ? "#2a72c5" : "" }} onClick={()=>showData("completed")}>Completed</span>
           <button className="btn" onClick={clearAll}>Clear All</button>
         </div>
 
