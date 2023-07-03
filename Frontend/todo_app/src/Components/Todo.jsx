@@ -144,14 +144,17 @@ const Todo = () => {
   }
 
   const showData = (data) => {
-    console.log(data);
     setActive(data);
     let filterData = todos.filter(todo => {
        return todo.status===data
        
     });
-    console.log(filterData);
-    setTodos(filterData)
+    if(filterData){
+      setTodos(filterData)
+    }
+    else{
+       return alert("Not Completed any task")
+    }
   }
 
   return (

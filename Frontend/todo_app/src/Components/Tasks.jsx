@@ -3,10 +3,7 @@ import { useEffect } from "react";
 import { BsPencilSquare, BsTrash3Fill } from "react-icons/bs";
 
 const Tasks = (props) => {
-  
-  useEffect( () => {
-   console.log(props.id + props.title + props.desc);
-  },[])
+
   return (
     <>
          <div className="taskContainer" key={props.id} >
